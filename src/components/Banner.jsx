@@ -12,15 +12,17 @@ const Banner = () => {
     }
   };
   return (
-    <div className="flex justify-center items-center space-y-5 flex-col">
-      <Title>This is home page</Title>
-      <button
-        className="p-4 bg-blue-700 hover:bg-green-700 rounded-2xl hover:scale-102"
-        onClick={handleClick}
-      >
-        Share Story
-      </button>
-    </div>
+    <Title>
+      <div className="flex justify-center items-center space-y-5 flex-col">
+        <h1>This is home page</h1>
+        <button
+          className="text-sm p-3 text-black bg-blue-700 hover:bg-green-700 rounded-2xl hover:scale-102"
+          onClick={handleClick}
+        >
+          Share Story
+        </button>
+      </div>
+    </Title>
   );
 };
 
